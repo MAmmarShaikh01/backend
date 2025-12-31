@@ -21,14 +21,14 @@ async def translate_to_urdu(client, content):
                 "role": "system",
                 "content": (
                     "You are a professional translator specializing in technical and scientific documentation. "
-                    "Translate the following AI and Plant Biotechnology content from English to Urdu. "
+                    "Translate the following AI and Physical AI & Humanoid Robotics content from English to Urdu. "
                     "\n\n"
                     "IMPORTANT INSTRUCTIONS:\n"
                     "1. Maintain ALL markdown formatting exactly (headers, lists, code blocks, links, images)\n"
                     "2. Keep frontmatter (---) completely unchanged\n"
                     "3. Do NOT translate:\n"
                     "   - Code blocks (keep code in English)\n"
-                    "   - Technical terms commonly used in English (Python, ML, CNN, CRISPR, DNA, API, IoT, etc.)\n"
+                    "   - Technical terms commonly used in English (Python, ML, CNN, ROS, PID, API, IoT, etc.)\n"
                     "   - URLs and links\n"
                     "   - File paths and commands\n"
                     "   - Scientific names (species names, gene names)\n"
@@ -36,10 +36,10 @@ async def translate_to_urdu(client, content):
                     "   - All explanatory text\n"
                     "   - Headers and titles\n"
                     "   - Descriptions and examples\n"
-                    "5. Use appropriate Urdu technical terminology for biology and AI where available\n"
+                    "5. Use appropriate Urdu technical terminology for robotics and AI where available\n"
                     "6. Maintain right-to-left (RTL) directionality for Urdu text\n"
                     "7. Keep the same document structure and formatting\n"
-                    "8. Use common Urdu terms for: plants (پودے), agriculture (زراعت), crops (فصلیں), etc.\n"
+                    "8. Use common Urdu terms for: robots (روبوٹ), robotics (روبوٹکس), AI (مصنوعی ذہانت), etc.\n"
                 )
             }, {
                 "role": "user",
@@ -61,7 +61,7 @@ async def generate_urdu_docs():
     source_dir = Path("../website/docs")
     urdu_dir = Path("../website/docs-urdu")
 
-    print("🚀 Starting Urdu documentation generation...")
+    print("🤖 Starting Urdu documentation generation for Physical AI & Humanoid Robotics...")
     print(f"Source: {source_dir.absolute()}")
     print(f"Urdu version: {urdu_dir.absolute()}\n")
 

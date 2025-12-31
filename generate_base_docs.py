@@ -12,64 +12,64 @@ if sys.platform == 'win32':
 # Load environment variables
 load_dotenv()
 
-# Documentation structure for AI Revolution in Plant Biotechnology
+# Documentation structure for Physical AI & Humanoid Robotics
 DOCS_STRUCTURE = {
     "module-1": [
         {
             "filename": "classification-models.md",
-            "title": "Classification Models for Plant Analysis",
+            "title": "Classification Models for Robotics",
             "sidebar_position": 3,
-            "topic": "Build classification models for plant species identification, disease detection, and health status prediction. Cover decision trees, random forests, SVM, and gradient boosting with practical agricultural examples.",
+            "topic": "Build classification models for robot behavior recognition, object identification, and state prediction. Cover decision trees, random forests, SVM, and gradient boosting with practical robotics examples.",
             "key_points": [
-                "Binary and multi-class classification in agriculture",
-                "Decision trees and random forests for plant classification",
-                "Support Vector Machines for disease detection",
+                "Binary and multi-class classification in robotics",
+                "Decision trees and random forests for robot behavior classification",
+                "Support Vector Machines for object recognition",
                 "Gradient boosting (XGBoost, LightGBM) for high accuracy",
                 "Model evaluation metrics (accuracy, precision, recall, F1)",
-                "Handling imbalanced datasets (healthy vs diseased)",
+                "Handling imbalanced datasets in robotics",
                 "Feature importance and interpretability",
-                "Practical project: Plant disease classifier with 95%+ accuracy"
+                "Practical project: Robot behavior classifier with 95%+ accuracy"
             ]
         },
         {
             "filename": "regression-models.md",
-            "title": "Regression Models for Yield Prediction",
+            "title": "Regression Models for Robot Performance",
             "sidebar_position": 4,
-            "topic": "Learn regression techniques to predict crop yields, plant growth rates, and harvest timing. Cover linear regression, polynomial regression, ensemble methods with real agricultural datasets.",
+            "topic": "Learn regression techniques to predict robot performance, movement efficiency, and system response times. Cover linear regression, polynomial regression, ensemble methods with real robotics datasets.",
             "key_points": [
                 "Linear and polynomial regression fundamentals",
-                "Multiple regression with agricultural features",
+                "Multiple regression with robotics features",
                 "Regularization (Lasso, Ridge) to prevent overfitting",
                 "Ensemble regression methods (Random Forest, Gradient Boosting)",
-                "Time-to-harvest prediction models",
-                "Soil nutrient impact on yield prediction",
+                "Time-to-completion prediction models",
+                "System performance impact on robot behavior",
                 "Model evaluation (RMSE, MAE, R² score)",
-                "Practical project: Wheat yield prediction system"
+                "Practical project: Robot movement efficiency prediction system"
             ]
         },
         {
             "filename": "time-series.md",
-            "title": "Time-Series Analysis for Crop Monitoring",
+            "title": "Time-Series Analysis for Robot Monitoring",
             "sidebar_position": 5,
-            "topic": "Master time-series forecasting for plant growth patterns, seasonal trends, and environmental monitoring. Cover ARIMA, Prophet, LSTM networks for sequential agricultural data.",
+            "topic": "Master time-series forecasting for robot movement patterns, sensor data trends, and system monitoring. Cover ARIMA, Prophet, LSTM networks for sequential robotics data.",
             "key_points": [
-                "Time-series data in agriculture (growth, weather, sensors)",
+                "Time-series data in robotics (movement, sensors, performance)",
                 "Stationarity and differencing",
-                "ARIMA models for crop growth forecasting",
+                "ARIMA models for robot behavior forecasting",
                 "Facebook Prophet for seasonal patterns",
                 "LSTM neural networks for complex sequences",
                 "Multi-variate time-series analysis",
-                "Forecasting soil moisture and irrigation needs",
-                "Practical project: 30-day growth prediction system"
+                "Forecasting sensor data and system needs",
+                "Practical project: 30-day robot performance prediction system"
             ]
         },
         {
             "filename": "ml-project.md",
-            "title": "Mini-Project: Disease Prediction System",
+            "title": "Mini-Project: Robot Behavior Prediction System",
             "sidebar_position": 6,
-            "topic": "Build a complete end-to-end machine learning system for early disease detection using sensor data and environmental factors. Integrate data collection, preprocessing, model training, and deployment.",
+            "topic": "Build a complete end-to-end machine learning system for early robot behavior prediction using sensor data and environmental factors. Integrate data collection, preprocessing, model training, and deployment.",
             "key_points": [
-                "Project overview: Early disease warning system",
+                "Project overview: Early robot behavior prediction system",
                 "Dataset collection and preparation",
                 "Feature engineering from sensor data",
                 "Multi-model comparison and selection",
@@ -83,81 +83,81 @@ DOCS_STRUCTURE = {
     "module-2": [
         {
             "filename": "cv-intro.md",
-            "title": "Introduction to Computer Vision in Agriculture",
+            "title": "Introduction to Computer Vision in Robotics",
             "sidebar_position": 1,
-            "topic": "Explore how computer vision revolutionizes agriculture through automated plant monitoring, disease detection, and phenotyping. Learn image fundamentals and agricultural imaging systems.",
+            "topic": "Explore how computer vision revolutionizes robotics through automated object detection, environment mapping, and visual servoing. Learn image fundamentals and robotic vision systems.",
             "key_points": [
-                "Computer vision applications in agriculture",
+                "Computer vision applications in robotics",
                 "Image formation and digital representation",
-                "Color spaces (RGB, HSV, LAB) for plant analysis",
-                "Image acquisition systems (cameras, drones, satellites)",
+                "Color spaces (RGB, HSV, LAB) for robotic vision",
+                "Image acquisition systems (cameras, stereo, depth sensors)",
                 "Lighting conditions and image quality",
-                "Plant imaging best practices",
-                "Common agricultural image datasets (PlantVillage, etc.)",
-                "Introduction to OpenCV for plant image processing"
+                "Robotic vision best practices",
+                "Common robotic image datasets (COCO, KITTI, etc.)",
+                "Introduction to OpenCV for robotic vision processing"
             ]
         },
         {
             "filename": "image-processing.md",
-            "title": "Image Acquisition and Preprocessing",
+            "title": "Image Acquisition and Preprocessing for Robotics",
             "sidebar_position": 2,
-            "topic": "Learn essential image preprocessing techniques for plant analysis including filtering, segmentation, feature extraction, and background removal for robust plant phenotyping.",
+            "topic": "Learn essential image preprocessing techniques for robotic vision including filtering, segmentation, feature extraction, and background removal for robust object recognition.",
             "key_points": [
                 "Image enhancement and noise reduction",
-                "Background removal for plant isolation",
-                "Color-based segmentation for leaf detection",
+                "Background removal for object isolation",
+                "Color-based segmentation for object detection",
                 "Morphological operations (erosion, dilation)",
-                "Edge detection for leaf boundaries",
+                "Edge detection for object boundaries",
                 "Contour detection and analysis",
                 "Feature extraction (color histograms, texture, shape)",
-                "Practical project: Automated leaf segmentation"
+                "Practical project: Automated object segmentation"
             ]
         },
         {
             "filename": "deep-learning-cnn.md",
-            "title": "Deep Learning for Plant Disease Detection",
+            "title": "Deep Learning for Object Recognition in Robotics",
             "sidebar_position": 3,
-            "topic": "Master Convolutional Neural Networks (CNNs) for plant disease classification. Learn transfer learning with pre-trained models, data augmentation, and deployment strategies.",
+            "topic": "Master Convolutional Neural Networks (CNNs) for object recognition in robotics. Learn transfer learning with pre-trained models, data augmentation, and deployment strategies.",
             "key_points": [
                 "CNN architecture fundamentals (convolution, pooling, FC layers)",
                 "Building CNNs with TensorFlow/Keras and PyTorch",
                 "Transfer learning with ResNet, VGG, EfficientNet",
-                "Data augmentation for limited agricultural datasets",
+                "Data augmentation for limited robotic datasets",
                 "Training strategies and regularization",
-                "Multi-class disease classification",
+                "Multi-class object classification",
                 "Model interpretation with Grad-CAM",
-                "Practical project: 20+ disease classifier with 98%+ accuracy"
+                "Practical project: 20+ object classifier with 98%+ accuracy"
             ]
         },
         {
             "filename": "object-detection.md",
-            "title": "Object Detection for Fruits and Flowers",
+            "title": "Object Detection for Robotic Navigation",
             "sidebar_position": 4,
-            "topic": "Implement object detection models for counting fruits, detecting flowers, and automated harvesting. Cover YOLO, Faster R-CNN, and custom detection pipelines.",
+            "topic": "Implement object detection models for obstacle detection, landmark recognition, and robotic navigation. Cover YOLO, Faster R-CNN, and custom detection pipelines.",
             "key_points": [
                 "Object detection vs classification vs segmentation",
                 "YOLO architecture and real-time detection",
                 "Faster R-CNN for precise localization",
                 "Training custom object detectors",
-                "Annotation tools (LabelImg, CVAT) for agricultural data",
-                "Fruit counting and yield estimation",
-                "Maturity detection for harvest timing",
-                "Practical project: Automated tomato detection and counting"
+                "Annotation tools (LabelImg, CVAT) for robotic data",
+                "Obstacle detection and avoidance",
+                "Landmark recognition for navigation",
+                "Practical project: Automated obstacle detection and classification"
             ]
         },
         {
             "filename": "cv-project.md",
-            "title": "Mini-Project: Automated Plant Phenotyping",
+            "title": "Mini-Project: Automated Robot Vision System",
             "sidebar_position": 5,
-            "topic": "Build a complete automated phenotyping system that measures plant height, leaf area, color analysis, and growth tracking from image sequences using computer vision.",
+            "topic": "Build a complete automated vision system that measures object dimensions, performs scene analysis, color analysis, and tracking from image sequences using computer vision.",
             "key_points": [
-                "Project overview: High-throughput phenotyping system",
+                "Project overview: High-throughput vision system",
                 "Multi-view image capture setup",
-                "Plant segmentation and 3D reconstruction",
-                "Automated measurement extraction (height, width, leaf count)",
-                "Leaf area calculation using pixel analysis",
-                "Color analysis for health assessment",
-                "Time-lapse growth tracking",
+                "Object segmentation and 3D reconstruction",
+                "Automated measurement extraction (dimensions, position, object count)",
+                "Object analysis for environment assessment",
+                "Color analysis for identification",
+                "Time-lapse tracking",
                 "Export data for ML analysis"
             ]
         }
@@ -165,107 +165,107 @@ DOCS_STRUCTURE = {
     "module-3": [
         {
             "filename": "genomics-intro.md",
-            "title": "Introduction to AI in Plant Genomics",
+            "title": "Introduction to AI in Robot Control Systems",
             "sidebar_position": 1,
-            "topic": "Understand how AI accelerates plant genomics research, from DNA sequencing analysis to trait prediction. Learn genomic data formats and basic bioinformatics concepts.",
+            "topic": "Understand how AI accelerates robot control systems, from sensor fusion to behavior prediction. Learn control system fundamentals and AI integration concepts.",
             "key_points": [
-                "Plant genomics fundamentals (DNA, genes, traits)",
-                "Genomic data formats (FASTA, FASTQ, VCF, GFF)",
-                "High-throughput sequencing technologies",
-                "AI applications in genomics (variant calling, annotation, prediction)",
-                "Genotype to phenotype mapping",
-                "GWAS (Genome-Wide Association Studies)",
-                "Introduction to bioinformatics tools and databases",
-                "Practical example: Analyzing Arabidopsis genome data"
+                "Robot control systems fundamentals (sensors, actuators, feedback)",
+                "Control data formats and protocols (ROS messages, etc.)",
+                "High-throughput sensor technologies",
+                "AI applications in control (path planning, feedback control, prediction)",
+                "Sensor to behavior mapping",
+                "System identification and modeling",
+                "Introduction to control frameworks and simulation environments",
+                "Practical example: Analyzing robot sensor data"
             ]
         },
         {
             "filename": "sequence-analysis.md",
-            "title": "Deep Learning for Genomic Sequences",
+            "title": "Deep Learning for Robot Movement Sequences",
             "sidebar_position": 2,
-            "topic": "Apply deep learning to genomic sequence analysis including promoter prediction, splice site detection, and gene finding using CNNs and RNNs on DNA sequences.",
+            "topic": "Apply deep learning to robot movement sequence analysis including trajectory prediction, movement optimization, and behavior modeling using CNNs and RNNs on movement data.",
             "key_points": [
-                "Encoding DNA sequences for neural networks (one-hot, k-mer)",
-                "CNNs for motif discovery in regulatory regions",
-                "RNNs and LSTMs for sequence modeling",
+                "Encoding movement sequences for neural networks (poses, joint angles, trajectories)",
+                "CNNs for pattern discovery in movement sequences",
+                "RNNs and LSTMs for movement modeling",
                 "Transformer models for long-range dependencies",
-                "Promoter and enhancer prediction",
-                "Splice site detection with deep learning",
-                "Protein function prediction from sequences",
-                "Practical project: Gene expression prediction from promoter sequences"
+                "Trajectory prediction and optimization",
+                "Movement pattern detection with deep learning",
+                "Behavior prediction from movement sequences",
+                "Practical project: Movement prediction from trajectory data"
             ]
         },
         {
             "filename": "crispr-ai.md",
-            "title": "CRISPR Target Prediction with AI",
+            "title": "AI for Robot Hardware Optimization",
             "sidebar_position": 3,
-            "topic": "Learn how AI optimizes CRISPR gene editing by predicting guide RNA efficiency, off-target effects, and designing optimal editing strategies for crop improvement.",
+            "topic": "Learn how AI optimizes robot hardware configurations by predicting component efficiency, off-target effects, and designing optimal hardware strategies for task performance.",
             "key_points": [
-                "CRISPR-Cas9 fundamentals and gene editing",
-                "Guide RNA design challenges",
-                "ML models for on-target activity prediction",
+                "Robot hardware fundamentals and component integration",
+                "Hardware design challenges",
+                "ML models for component performance prediction",
                 "Off-target effect prediction and minimization",
-                "Deep learning for sgRNA efficiency scoring",
-                "Multiplexed editing strategy optimization",
-                "AI-designed crops: examples and case studies",
-                "Practical project: Design optimal CRISPR edits for drought resistance"
+                "Deep learning for hardware efficiency scoring",
+                "Multiplexed hardware strategy optimization",
+                "AI-designed robots: examples and case studies",
+                "Practical project: Design optimal hardware configurations for task efficiency"
             ]
         },
         {
             "filename": "genomic-selection.md",
-            "title": "Genomic Selection and Breeding",
+            "title": "Robot Design and Configuration Selection",
             "sidebar_position": 4,
-            "topic": "Master genomic selection techniques to accelerate crop breeding programs. Use ML to predict breeding values and design optimal crosses for desired traits.",
+            "topic": "Master robot design selection techniques to accelerate robot development. Use ML to predict performance values and design optimal configurations for desired tasks.",
             "key_points": [
-                "Traditional breeding vs genomic selection",
-                "Genomic prediction models (GBLUP, rrBLUP, Bayesian)",
-                "Deep learning for complex trait prediction",
-                "Multi-trait and multi-environment models",
-                "Training population design and optimization",
-                "Breeding value prediction accuracy",
-                "Optimal cross selection with genetic algorithms",
-                "Practical project: Predict yield from genomic markers"
+                "Traditional design vs AI-assisted selection",
+                "Performance prediction models (regression, ensemble methods)",
+                "Deep learning for complex performance prediction",
+                "Multi-task and multi-environment models",
+                "Training data design and optimization",
+                "Performance prediction accuracy",
+                "Optimal configuration selection with genetic algorithms",
+                "Practical project: Predict robot performance from configuration parameters"
             ]
         },
         {
             "filename": "genomics-project.md",
-            "title": "Mini-Project: Trait Prediction System",
+            "title": "Mini-Project: Robot Performance Prediction System",
             "sidebar_position": 5,
-            "topic": "Build a genomic trait prediction system that predicts plant phenotypes from genotypic data using ensemble ML methods and validates predictions with real datasets.",
+            "topic": "Build a robot performance prediction system that predicts robot behaviors from configuration data using ensemble ML methods and validates predictions with real datasets.",
             "key_points": [
-                "Project overview: Genomic-to-phenotypic prediction pipeline",
-                "Dataset: Rice/Maize genomic and phenotypic data",
-                "SNP filtering and quality control",
-                "Feature engineering from genomic markers",
-                "Ensemble methods for trait prediction",
+                "Project overview: Configuration-to-performance prediction pipeline",
+                "Dataset: Robot configuration and performance data",
+                "Parameter filtering and quality control",
+                "Feature engineering from robot configurations",
+                "Ensemble methods for performance prediction",
                 "Cross-validation with different environments",
-                "Model interpretation: identifying causal variants",
-                "Integration with breeding programs"
+                "Model interpretation: identifying key parameters",
+                "Integration with robot design workflows"
             ]
         }
     ],
     "module-4": [
         {
             "filename": "iot-intro.md",
-            "title": "Introduction to IoT in Agriculture",
+            "title": "Introduction to IoT in Robotics",
             "sidebar_position": 1,
-            "topic": "Learn IoT fundamentals for smart agriculture including sensor networks, edge computing, and cloud integration for real-time farm monitoring and decision-making.",
+            "topic": "Learn IoT fundamentals for smart robotics including sensor networks, edge computing, and cloud integration for real-time robot monitoring and decision-making.",
             "key_points": [
-                "IoT architecture for precision agriculture",
-                "Sensor types (soil, weather, plant health)",
+                "IoT architecture for robotics",
+                "Sensor types (position, IMU, camera, LiDAR)",
                 "Microcontrollers (Arduino, Raspberry Pi, ESP32)",
-                "Wireless communication (WiFi, LoRa, Bluetooth, Zigbee)",
+                "Wireless communication (WiFi, Bluetooth, Zigbee)",
                 "Edge computing vs cloud processing",
-                "Data protocols (MQTT, HTTP, CoAP)",
-                "Power management and solar solutions",
-                "Practical example: Build a soil moisture monitoring node"
+                "Data protocols (MQTT, ROS2, HTTP)",
+                "Power management and battery solutions",
+                "Practical example: Build a robot sensor monitoring node"
             ]
         },
         {
             "filename": "sensor-networks.md",
-            "title": "Sensor Networks and Data Collection",
+            "title": "Robot Sensor Networks and Data Collection",
             "sidebar_position": 2,
-            "topic": "Design and deploy multi-sensor networks for comprehensive farm monitoring. Learn data aggregation, storage, and real-time streaming to ML pipelines.",
+            "topic": "Design and deploy multi-sensor networks for comprehensive robot monitoring. Learn data aggregation, storage, and real-time streaming to ML pipelines.",
             "key_points": [
                 "Sensor network topology design",
                 "Multi-sensor data fusion",
@@ -274,56 +274,56 @@ DOCS_STRUCTURE = {
                 "Data validation and quality control",
                 "Missing data handling in sensor networks",
                 "Network reliability and fault tolerance",
-                "Practical project: 10-node farm sensor network"
+                "Practical project: 10-node robot sensor network"
             ]
         },
         {
             "filename": "yield-prediction.md",
-            "title": "AI-Powered Yield Prediction",
+            "title": "AI-Powered Robot Performance Prediction",
             "sidebar_position": 3,
-            "topic": "Build accurate yield prediction models combining satellite imagery, weather data, soil sensors, and historical records using ensemble ML and deep learning.",
+            "topic": "Build accurate robot performance prediction models combining sensor data, environmental factors, and historical records using ensemble ML and deep learning.",
             "key_points": [
-                "Multi-source data integration (satellites, sensors, weather)",
-                "Feature engineering from remote sensing (NDVI, EVI)",
-                "Weather data APIs and forecasting",
+                "Multi-source data integration (sensors, environment, tasks)",
+                "Feature engineering from sensor data (position, orientation, etc.)",
+                "Environmental data APIs and forecasting",
                 "Ensemble models combining multiple data sources",
                 "Deep learning on multi-modal data",
                 "Spatial and temporal modeling",
-                "Pre-harvest yield estimation for logistics",
-                "Practical project: County-level crop yield forecasting"
+                "Pre-task performance estimation for planning",
+                "Practical project: Robot performance forecasting"
             ]
         },
         {
             "filename": "smart-irrigation.md",
-            "title": "Automated Irrigation and Resource Management",
+            "title": "Automated Robot Resource Management",
             "sidebar_position": 4,
-            "topic": "Develop AI-driven irrigation control systems that optimize water usage using soil moisture, weather forecasts, and crop water requirements with reinforcement learning.",
+            "topic": "Develop AI-driven resource management systems that optimize power usage using battery levels, task requirements, and environmental conditions with reinforcement learning.",
             "key_points": [
-                "Evapotranspiration and crop water needs",
-                "Soil moisture sensor placement and interpretation",
-                "Weather forecast integration",
-                "Rule-based vs ML-based irrigation control",
-                "Reinforcement learning for irrigation scheduling",
-                "Fertigation: combined water and nutrient delivery",
-                "Hardware: solenoid valves, pumps, controllers",
-                "Practical project: Smart irrigation system with 30% water savings"
+                "Power consumption and robot energy needs",
+                "Battery sensor placement and interpretation",
+                "Environmental condition integration",
+                "Rule-based vs ML-based power management",
+                "Reinforcement learning for energy scheduling",
+                "Multi-resource: combined power and task optimization",
+                "Hardware: power management, controllers, sensors",
+                "Practical project: Smart power management system with 30% energy savings"
             ]
         },
         {
             "filename": "capstone-project.md",
-            "title": "Capstone Project: Complete Smart Farm System",
+            "title": "Capstone Project: Complete Robot Control System",
             "sidebar_position": 5,
-            "topic": "Integrate everything learned into a comprehensive smart farm platform with multi-sensor monitoring, disease detection, yield prediction, and automated control with web dashboard.",
+            "topic": "Integrate everything learned into a comprehensive robot control platform with multi-sensor monitoring, behavior prediction, performance optimization, and automated control with web dashboard.",
             "key_points": [
                 "System architecture: sensors, edge devices, cloud, web app",
                 "Real-time monitoring dashboard (React + Chart.js)",
-                "Disease detection from camera feeds",
+                "Behavior prediction from sensor feeds",
                 "Automated alerts and notifications",
                 "Historical data analysis and trends",
-                "Yield prediction and harvest planning",
-                "Automated irrigation control integration",
+                "Performance prediction and task planning",
+                "Automated control system integration",
                 "Deployment: Docker, cloud hosting, mobile access",
-                "Future enhancements: scaling to commercial farms"
+                "Future enhancements: scaling to commercial robots"
             ]
         }
     ]
@@ -334,7 +334,7 @@ async def generate_lesson_content(client, module_name, lesson_info):
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            prompt = f"""Create a comprehensive, educational markdown lesson for a university-level textbook on "AI Revolution in Plant Biotechnology".
+            prompt = f"""Create a comprehensive, educational markdown lesson for a university-level textbook on "Physical AI & Humanoid Robotics".
 
 Module: {module_name}
 Title: {lesson_info['title']}
@@ -353,7 +353,7 @@ sidebar_position: {lesson_info['sidebar_position']}
    - Introduction with real-world motivation
    - Core concepts with clear explanations
    - Multiple code examples using Python (scikit-learn, TensorFlow/PyTorch, pandas, numpy)
-   - Practical applications in agriculture/plant science
+   - Practical applications in robotics/AI
    - Best practices and common pitfalls
    - Hands-on example or mini-project
    - Summary table or checklist
@@ -361,11 +361,11 @@ sidebar_position: {lesson_info['sidebar_position']}
 
 3. Writing style:
    - Clear, engaging, educational tone
-   - Practical examples from agriculture/plant biotechnology
+   - Practical examples from robotics/AI
    - Code examples that actually work and are well-commented
    - Use tables, lists, and formatting for readability
-   - Include specific plant examples (wheat, rice, tomato, etc.)
-   - Add emojis sparingly (🌱 💡 ⚠️) only where appropriate
+   - Include specific robot examples (humanoid robots, manipulators, mobile robots, etc.)
+   - Add emojis sparingly (🤖 💡 ⚠️) only where appropriate
 
 4. Code quality:
    - All code must be runnable and practical
@@ -381,7 +381,7 @@ Generate the complete lesson content now:"""
                 model="llama-3.3-70b-versatile",
                 messages=[{
                     "role": "system",
-                    "content": "You are an expert educator in AI, plant biotechnology, and precision agriculture. "
+                    "content": "You are an expert educator in AI, Physical AI, and humanoid robotics. "
                               "Create comprehensive, practical, code-rich lessons that teach both theory and implementation."
                 }, {
                     "role": "user",
@@ -407,7 +407,7 @@ async def generate_all_lessons():
     client = AsyncGroq(api_key=os.getenv("GROQ_API_KEY"))
     docs_dir = Path("../website/docs")
 
-    print("🌱 Starting AI-powered lesson generation for Plant Biotechnology...")
+    print("🤖 Starting AI-powered lesson generation for Physical AI & Humanoid Robotics...")
     print(f"📁 Target directory: {docs_dir.absolute()}\n")
 
     total_lessons = sum(len(lessons) for lessons in DOCS_STRUCTURE.values())

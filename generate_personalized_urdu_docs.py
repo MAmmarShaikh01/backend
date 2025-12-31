@@ -17,37 +17,37 @@ async def personalize_urdu_content(client, content, background_type):
     
     if background_type == "software":
         system_prompt = """
-        You are adapting Urdu technical documentation for SOFTWARE DEVELOPERS/DATA SCIENTISTS working in Plant Biotechnology AI.
-        
+        You are adapting Urdu technical documentation for SOFTWARE DEVELOPERS/DATA SCIENTISTS working in Physical AI & Humanoid Robotics.
+
         IMPORTANT:
         1. Keep ALL Urdu text in Urdu
         2. Keep frontmatter unchanged
         3. Keep code blocks in English
         4. Keep markdown formatting exactly
-        
+
         ADAPT THE CONTENT BY:
-        - Adding detailed explanations of plant biology, genomics, breeding, phenotyping concepts in Urdu
+        - Adding detailed explanations of robotics, control systems, physical AI concepts in Urdu
         - Using programming analogies (APIs, databases, neural networks, data pipelines, ML models)
         - Assume knowledge of: Python, ML frameworks, deep learning, cloud computing, algorithms
-        - Explain in Urdu: Plant physiology, genetics, CRISPR, lab protocols, agricultural practices
-        - Add software developer perspective to Urdu explanations about biotechnology
+        - Explain in Urdu: Robot kinematics, dynamics, control theory, sensor integration, physical AI
+        - Add software developer perspective to Urdu explanations about robotics
         """
     else:  # hardware
         system_prompt = """
-        You are adapting Urdu technical documentation for AGRICULTURAL/BIOTECHNOLOGY ENGINEERS working with AI systems.
-        
+        You are adapting Urdu technical documentation for ROBOTICS/HARDWARE ENGINEERS working with AI systems.
+
         IMPORTANT:
         1. Keep ALL Urdu text in Urdu
         2. Keep frontmatter unchanged
         3. Keep code blocks in English
         4. Keep markdown formatting exactly
-        
+
         ADAPT THE CONTENT BY:
         - Adding detailed explanations of programming, ML algorithms, deep learning concepts in Urdu
-        - Using lab equipment analogies (microscopes, sensors, imaging systems, growth chambers)
-        - Assume knowledge of: Plant biology, genetics, lab work, field equipment, sensors
+        - Using hardware analogies (sensors, actuators, control systems, embedded systems)
+        - Assume knowledge of: Robotics, control systems, electronics, sensors, physical systems
         - Explain in Urdu: Python syntax, ML training, neural networks, software libraries, APIs
-        - Add biotechnology engineer perspective to Urdu explanations about AI/ML
+        - Add robotics engineer perspective to Urdu explanations about AI/ML
         """
     
     try:
@@ -77,7 +77,7 @@ async def generate_personalized_urdu_docs():
     software_dir = Path("../website/docs-urdu-software")
     hardware_dir = Path("../website/docs-urdu-hardware")
 
-    print("🚀 Starting personalized Urdu documentation generation...")
+    print("🤖 Starting personalized Urdu documentation generation for Physical AI & Humanoid Robotics...")
     print(f"Source: {source_dir.absolute()}")
     print(f"Software version: {software_dir.absolute()}")
     print(f"Hardware version: {hardware_dir.absolute()}\n")

@@ -77,10 +77,10 @@ async def generate_background_docs():
             print(f"  → Generating software background version...")
             software_content = await adapt_for_background(
                 client, content, "software",
-                "Add detailed explanations for plant biology, agricultural systems, and biotechnology concepts. "
+                "Add detailed explanations for robotics, control systems, and physical AI concepts. "
                 "Assume user is proficient in programming (Python, ML frameworks, data science, cloud computing) but needs help "
-                "understanding plant physiology, genomics, breeding, phenotyping, agricultural practices, lab protocols. "
-                "Add practical analogies between software/ML concepts and biological systems where helpful. "
+                "understanding robot kinematics, dynamics, control theory, sensor integration, robotic systems, physical AI. "
+                "Add practical analogies between software/ML concepts and robotic systems where helpful. "
                 "Focus on: algorithms, data pipelines, model architectures, APIs, cloud deployment, scalability."
             )
             
@@ -89,9 +89,9 @@ async def generate_background_docs():
             hardware_content = await adapt_for_background(
                 client, content, "hardware",
                 "Add detailed explanations for programming, ML algorithms, and software engineering concepts. "
-                "Assume user is proficient in plant biology, agriculture, lab equipment, field sensors but needs help with "
+                "Assume user is proficient in robotics, control systems, electronics, sensors, and physical systems but needs help with "
                 "Python syntax, ML model training, deep learning architectures, software libraries, code structure. "
-                "Add practical analogies between lab equipment/field sensors and software/ML concepts where helpful. "
+                "Add practical analogies between robotic hardware systems and software/ML concepts where helpful. "
                 "Focus on: sensor integration, IoT devices, imaging systems, embedded systems, robotics, practical deployment."
             )
             
